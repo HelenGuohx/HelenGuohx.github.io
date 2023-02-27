@@ -1,0 +1,93 @@
+/*
+ * Globals
+ */
+
+
+/* Custom default button */
+.btn-light,
+.btn-light:hover,
+.btn-light:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+}
+
+
+/*
+ * Base structure
+ */
+
+body {
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+
+/*
+ * Header
+ */
+
+.nav-masthead .nav-link {
+  color: rgba(255, 255, 255, .5);
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+
+/* Dots animation */
+
+.dot-container {
+    padding: 14pt;
+}
+
+.dot-typing {
+    position: relative;
+    left: -9999px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    color: #000000;
+    box-shadow: 9984px 0 0 0 #000000, 9999px 0 0 0 #000000, 10014px 0 0 0 #000000;
+    animation: dot-typing 1.5s infinite linear;
+  }
+  
+  @keyframes dot-typing {
+    0% {
+      box-shadow: 9984px 0 0 0 #000000, 9999px 0 0 0 #000000, 10014px 0 0 0 #000000;
+    }
+    16.667% {
+      box-shadow: 9984px -10px 0 0 #000000, 9999px 0 0 0 #000000, 10014px 0 0 0 #000000;
+    }
+    33.333% {
+      box-shadow: 9984px 0 0 0 #000000, 9999px 0 0 0 #000000, 10014px 0 0 0 #000000;
+    }
+    50% {
+      box-shadow: 9984px 0 0 0 #000000, 9999px -10px 0 0 #000000, 10014px 0 0 0 #000000;
+    }
+    66.667% {
+      box-shadow: 9984px 0 0 0 #000000, 9999px 0 0 0 #000000, 10014px 0 0 0 #000000;
+    }
+    83.333% {
+      box-shadow: 9984px 0 0 0 #000000, 9999px 0 0 0 #000000, 10014px -10px 0 0 #000000;
+    }
+    100% {
+      box-shadow: 9984px 0 0 0 #000000, 9999px 0 0 0 #000000, 10014px 0 0 0 #000000;
+    }
+  }
+  
